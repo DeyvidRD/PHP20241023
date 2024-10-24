@@ -10,10 +10,10 @@
     <form action="/criar_usuario" method="post">
         @csrf
         <label for="name">Nome</label>
-        <input type="text" name="cpf">
+        <input type="text" name="name">
 
         <label for="cpf">CPF</label>
-        <input type="text" name="name">
+        <input type="text" name="cpf">
 
         <label for="email">Email</label>
         <input type="text" name="email">

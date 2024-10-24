@@ -16,7 +16,7 @@
         <input type="text" name="descricao">
 
         <label for="preco">Preço</label>
-        <input type="text" name="precos">
+        <input type="text" name="preco">
 
         <input type="submit" value="Salvar">
     </form>

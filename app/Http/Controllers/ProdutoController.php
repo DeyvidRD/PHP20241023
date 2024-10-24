@@ -27,4 +27,10 @@ class ProdutoController extends Controller
 
         return view("produtos", ["produtos"=>$produtos]);
     }
+
+    public function deletar($id) {
+        $produto = new Produto;
+        $produto->find($id)->delete();
+        return redirect('/listar_produtos');
+    }
 }

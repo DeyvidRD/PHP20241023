@@ -22,11 +22,11 @@
           <td>{{$produto->descricao}}</td>
           <td>{{$produto->preco}}</td>
           <td>
-            <form method="POST" action="/deletar_produto/{{$produto->nome}}">
+            <form method="POST" action="/deletar_produto/{{$produto->id}}">
               @csrf
               {{ method_field("DELETE") }}
               <input type="submit" value="delete produto">
-            </form>
+            </form> 
           </td>
         </tr>
     @endforeach

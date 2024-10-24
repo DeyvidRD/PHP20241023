@@ -30,7 +30,7 @@ class UserController extends Controller
     public function deletar($id) {
         $user = new User;
         $user->find($id)->delete();
-        return redirect('/listar_usuarios');
+        return redirect('/listar_produtos');
     }
 
     public function formEditarUsuario($id) {
